@@ -1,5 +1,5 @@
 //Business Logic
-var goodLuck = 4;
+var goodLuck = 4; //set to 4 so the findFortune function works correctly.  It sets the default luck score to the neutral location in the results array
 var badLuck = 0;
 
 function calcFortune(omen) {
