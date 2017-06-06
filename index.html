@@ -15,13 +15,11 @@
 
 <body>
   <div id="container" class="container">
-
     <div class="row">
-
       <!-- The form -->
       <div class="col-lg-10">
         <div class="well bs-component">
-          <form class="form-horizontal">
+          <form id="fortuneForm" class="form-horizontal">
             <fieldset>
               <legend>Fortune Teller</legend>
               <p>Select all that apply, and then press submit to see your fortune.</p>
@@ -29,19 +27,19 @@
                 <div class="col-lg-6">
                   <h4>Bad Omens, I have...</h4>
                   <div class="checkbox">
-                    <label><input class="bad" type="checkbox"> openned an umbrella indoors.</label><br>
-                    <label><input class="bad" type="checkbox"> walked under a ladder.</label><br>
-                    <label><input class="bad" type="checkbox"> had a black cat cross my path</label><br>
-                    <label><input class="bad" type="checkbox"> broke a mirror.</label><br>
+                    <label><input class="bad" name="Omen" type="checkbox" value="umbrellas"> openned an umbrella indoors.</label><br>
+                    <label><input class="bad" name="Omen" type="checkbox" value="ladders"> walked under a ladder.</label><br>
+                    <label><input class="bad" name="Omen" type="checkbox" value="cats"> had a black cat cross my path</label><br>
+                    <label><input class="bad" name="Omen" type="checkbox" value="mirrors"> broke a mirror.</label><br>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <h4>Good Omens, I have...</h4>
                   <div class="checkbox">
-                    <label><input class="good" type="checkbox"> Seen a falling star.</label><br>
-                    <label><input class="good" type="checkbox"> found a four leaf clover.</label><br>
-                    <label><input class="good" type="checkbox"> butterfly lands on you.</label><br>
-                    <label><input class="good" type="checkbox"> won the lottery.</label><br>
+                    <label><input class="good" name="Omen" type="checkbox" value="stars"> Seen a falling star.</label><br>
+                    <label><input class="good" name="Omen" type="checkbox" value="clovers"> found a four leaf clover.</label><br>
+                    <label><input class="good" name="Omen" type="checkbox" value="butterflies"> had a butterfly lands on me.</label><br>
+                    <label><input class="good" name="Omen" type="checkbox" value="lotteries"> won the lottery.</label><br>
                   </div>
                 </div>
               </div>
@@ -53,6 +51,7 @@
             </fieldset>
           </form>
         </div>
+        <div id="results"></div>
       </div>
       <!--end of column -->
     </div>
